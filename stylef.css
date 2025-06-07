@@ -1,0 +1,129 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif; /* Use your Figma font */
+  }
+  
+  /* HEADER */
+  header {
+    background-color: #ffffff; /* Replace with Figma background color */
+    padding: 20px 40px; /* Adjust padding as per Figma */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px; /* or Figma container width */
+    margin: 0 auto;
+  }
+  
+  header nav img {
+    height: 50px; /* Adjust logo height from Figma */
+    width: auto;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between nav links */
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #333333; /* Figma text color */
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #007BFF; /* Figma primary accent color */
+  }
+  
+  /* FIRST SECTION (Hero) */
+  section:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px; /* Match container width */
+    margin: 60px auto;
+    padding: 0 40px;
+    gap: 40px;
+  }
+  
+  section:first-of-type > div:first-child {
+    flex: 1;
+  }
+  
+  section:first-of-type > div:first-child h1 {
+    font-size: 48px; /* Figma heading size */
+    font-weight: 700;
+    color: #222222; /* Figma heading color */
+    margin-bottom: 20px;
+  }
+  
+  section:first-of-type > div:first-child span {
+    display: inline-block;
+    font-size: 24px; /* Figma subheading size */
+    color: #555555; /* Figma subheading color */
+    margin-right: 15px;
+    font-weight: 500;
+  }
+  
+  section:first-of-type > div:first-child button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #007BFF; /* Figma primary button color */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  section:first-of-type > div:first-child button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  section:first-of-type > div:last-child {
+    flex: 1;
+    /* Add styling for images or content inside this div */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  section:first-of-type > div:last-child > div {
+    flex: 1 1 45%; /* Two items per row */
+    text-align: center;
+  }
+  
+  section:first-of-type > div:last-child img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px; /* Rounded corners if in Figma */
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  section:first-of-type > div:last-child h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 5px;
+  }
+  
+  section:first-of-type > div:last-child p {
+    font-size: 14px;
+    color: #666666;
+  }
+  
