@@ -1,0 +1,46 @@
+/* styles.css */
+.membership-section {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+    }
+   
+    .membership-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    }
+   
+    .membership-list {
+    list-style: none;
+    padding: 0;
+    }
+   
+    .membership-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    }
+   
+    .smiley-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    }
+   
+    .lorem-text {
+    font-size: 16px;
+    }
+   
+    .lorem-paragraph {
+    font-size: 14px;
+    }
+   
+    .register-button {
+    background-color: #9c27b0; /* Purple button */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
