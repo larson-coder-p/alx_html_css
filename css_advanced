@@ -1,0 +1,77 @@
+/* Centralized typography and colors for quotes */
+blockquote {
+  font-style: italic;
+  font-size: 1.25rem; /* 20px approx */
+  line-height: 1.6;
+  color: #444444; /* Dark gray for readability */
+  margin-bottom: 1rem;
+  border-left: 4px solid #007BFF; /* Accent color from Figma */
+  padding-left: 1rem;
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote::before {
+  content: open-quote;
+  font-size: 2rem;
+  color: #007BFF;
+  vertical-align: top;
+  margin-right: 0.25rem;
+}
+
+blockquote::after {
+  content: close-quote;
+  font-size: 2rem;
+  color: #007BFF;
+  vertical-align: bottom;
+  margin-left: 0.25rem;
+}
+
+/* Testimonial container */
+.testimonial {
+  display: flex;
+  align-items: center;
+  max-width: 900px; /* Match Figma container width */
+  margin: 60px auto;
+  padding: 0 20px;
+  gap: 40px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Image styling */
+.testimonial-image img {
+  width: 140px; /* Adjust as per Figma */
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Content styling */
+.testimonial-content h3 {
+  font-weight: 700;
+  font-size: 1.125rem; /* 18px */
+  color: #222222;
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-content p {
+  font-weight: 500;
+  font-size: 1rem; /* 16px */
+  color: #666666;
+  margin-top: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .testimonial {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .testimonial-image img {
+    width: 120px;
+    height: 120px;
+  }
+}
