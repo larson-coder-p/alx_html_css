@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Portfolio</title>
+  <style>
+    /* Combined CSS */
+
+    /* Reset default browser styles */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body as flex container with column direction */
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background-color: #fafafa;
+      color: #222222;
+      padding: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
+
+    /* Logo styling */
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #007acc;
+      margin-right: 1rem;
+      user-select: none;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #004d99;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    header ul li a {
+      color: #cce6ff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    header ul li a:hover,
+    header ul li a:focus {
+      color: #ffffff;
+      outline: none;
+      text-decoration: underline;
+    }
+
+    /* Main as flex container with row direction */
+    main {
+      display: flex;
+      flex-direction: row;
+      flex: auto;
+      gap: 1rem;
+      box-sizing: border-box;
+    }
+
+    /* Article takes 2/3 width */
+    article {
+      flex: 2;
+      overflow-y: auto;
+      padding: 2rem;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      font-family: 'Georgia', serif;
+      color: #333333;
+      line-height: 1.8;
+      box-sizing: border-box;
+    }
+
+    article h1, article h2, article h3 {
+      color: #004d99;
+      margin-bottom: 1rem;
+    }
+
+    article p {
+      margin-bottom: 1.25rem;
+      font-size: 1.125rem;
+    }
+
+    /* Aside takes 1/3 width */
+    aside {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.5rem;
+      background-color: #f7f9fc;
+      border-left: 3px solid #007acc;
+      border-radius: 0 12px 12px 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #555555;
+      box-sizing: border-box;
+    }
+
+    /* Contact form styles */
+    form label {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 1rem;
+      resize: vertical;
+    }
+
+    form button {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover,
+    form button:focus {
+      background-color: #005fa3;
+      outline: none;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #004d99;
+      color: #cce6ff;
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-sizing: border-box;
+    }
+
+    /* Links styling site-wide */
+    a {
+      color: #007acc;
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      color: #004d66;
+      outline: none;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="works_on_smartphone">
+
+  <header>
+    <ul>
+      <li class="logo">&#9733;</li> <!-- Unicode star as logo -->
+      <li><a href="C:\Users\amost\Pictures\Saved Pictures\WhatsApp Image 2025-06-05 at 10.29.38_4dce2339.jpg">About Me</a></li>
+      <li><a href="C:\Users\amost\Pictures\Saved Pictures\WhatsApp Image 2025-06-07 at 13.31.30_6245c207.jpg">Projects</a></li>
+      <li><a href="C:\Users\amost\Pictures\Saved Pictures\WhatsApp Image 2025-06-05 at 10.37.44_59c5b17f.jpg">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <article>
+      <section id="about">
+        <h1>About Me</h1>
+        <p>Hello! I'm a passionate developer with experience in building modern web applications. I enjoy crafting clean, efficient, and user-friendly websites.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Project One:</strong> A responsive portfolio website built with HTML, CSS, and JavaScript.</li>
+          <li><strong>Project Two:</strong> A task management app using React and Firebase.</li>
+          <li><strong>Project Three:</strong> An e-commerce site prototype with a sleek UI.</li>
+        </ul>
+      </section>
+
+      <section id="blog">
+        <h2>Blog</h2>
+        <article>
+          <h3>Understanding Flexbox</h3>
+          <p>A beginner's guide to CSS pinpoint and how it simplifies responsive layouts.</p>
+          <a href="#">Read More</a>
+        </article>
+        <article>
+          <h3>JavaScript ES6 Features</h3>
+          <p>Exploring the most useful features for modern JavaScript development.</p>
+          <a href="#">Read More</a>
+        </article>
+      </section>
+    </article>
+
+    <aside id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post" aria-label="Contact form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required autocomplete="name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Larson Mwendah. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+
