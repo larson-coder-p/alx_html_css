@@ -1,0 +1,77 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background-color: #111;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('headphones_hero_2.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  
+  .navbar .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .navbar nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  .navbar nav a:hover {
+    opacity: 1;
+  }
+  
+  /* Hero Text */
+  .hero-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 10px 25px;
+    background-color: #ff3366;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+.cta-button:hover {
+    background-color: #e6295a;
+}
+
+body, .hero {
+    background: url('headphones_hero_2.jpg') center/cover no-repeat;
+}
+  .hero-description {
+        max-width: 700px;}
