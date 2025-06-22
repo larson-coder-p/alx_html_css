@@ -1,0 +1,15 @@
+footer {
+    background-color: #333; /* Dark footer background */
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+}
